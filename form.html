@@ -2,36 +2,55 @@
 <html lang="en">
 
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link rel="stylesheet" href="bootstrap/css/bootstrap/min.css">
+
 	<title>Document</title>
 </head>
 
 <body>
+
+	<div class="container">
+
 	<form action="" method="post">
-
+	<div class="mb-3">
 		<label for="nim">NIM</label>
-		<input type="text" name="nim" id="nim">
+		<input required class="form-control" type="text" name="txtnim" id="nim">
+	</div>
 
+	<div class="mb-3">
 		<label for="name">Nama</label>
-		<input type="text" name="name" id="nama">
+		<input class="form-control" type="text" name="name" id="nama">
+	</div>
 
+	<div class="mb-3">
 		<label for="jk">jenis kelamin</label>
 		<input type="radio" name="jk"id='jk' value="L"> laki-laki
 		<input type="radio" name="jk" id="jk" value="P"> perempuan
+	</div>
 
-		<select name="jurusan">
+	<div class="mb-3">
+		<label for="jurusan">jurusan</label>
+		<select class="form-control" name="jurusan" id="jurusan" required>
 			<option value="">Pilih Jurusan</option>
 			<option value="D3SI">D3SI</option>
 			<option value="S1RPL">S1 RPL</option>
-		</select> <br>
+		</select> 
+	</div>
 
-		<label for="catatan">Catatan</label>
-		<textarea name="Catatan" id="catatan" cols="50" rows="3"></textarea>
+	<div class ="mb-3">
+		<label for="catatan">catatan</label>
+		<textarea class="form-control" requid name="catatan" id="catatan"></textarea>
+	</div>
 
 		<input type="submit" name="submit" value="simpan data">
-		<input type="reset" value="Batal">
+		<input type="reset" value="Batal" class="btn btn-warning">
 
-	</form>
+</form>
+</div>
+	<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
 
 </body>
-</html>
